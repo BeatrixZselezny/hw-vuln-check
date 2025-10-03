@@ -76,6 +76,19 @@ A megosztás célja: technikai immunizálás, nem üzleti haszon.
 
 Ha csak egyetlen gépet megment attól, hogy szemétteleppé váljon — már megérte.
 
+---
+
+## 📜 Licenc
+
+Ez a projekt nem hozható kereskedelmi forgalomba.  
+A `LICENSE.audit.md` fájl tartalmazza a részletes felhasználási feltételeket.
+
+Ez az eszköz kizárólag tanításra, diagnosztikára és auditált megosztásra szolgál.  
+Nem használható profitorientált célra, nem integrálható fizetős szolgáltatásba, nem értékesíthető.
+
+A megosztás célja: technikai immunizálás, nem üzleti haszon.
+
+
 
 ## 📄 Példa kimenet (`values` fájl)
 
