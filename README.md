@@ -2,10 +2,9 @@
 
 Auditált CPU sebezhetőség-lekérdező és mitigációs sablon Linux kernel-alapú rendszerekhez, kizárólag szakértőknek
 
-![Auditált diagnosztika](https://img.shields.io/badge/auditált-diagnosztika-green)
-![Linux kernel alapú](https://img.shields.io/badge/Linux-kernel--alapú-blue)
-![Nem kereskedelmi célra](https://img.shields.io/badge/nem-kereskedelmi-célra-red)
-![Szakértői használatra](https://img.shields.io/badge/csak-szakértőknek-orange)
+🔒 Nem kereskedelmi célra  
+🧠 Csak szakértőknek  
+📎 Diagnosztikai célra, nem módosít
 
 
 ---
