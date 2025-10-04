@@ -12,9 +12,8 @@ Auditált CPU sebezhetőség-lekérdező és mitigációs sablon Linux kernel-al
 ## 🔧 Platformkövetelmény
 
 Ez az eszköz kizárólag Linux rendszereken működik, ahol a kernel támogatja a `/sys/devices/system/cpu/vulnerabilities/` könyvtárat.  
-Windows, macOS vagy egyéb operációs rendszerek nem kompatibilisek — ne próbáld futtatni rajtuk.
-
-A script működése kernel-verzióhoz és build-opciókhoz kötött — csak auditált Linux környezetben alkalmazható.
+Windows, macOS vagy egyéb operációs rendszereklel nem kompatibilis — Ellenben Windows rendszereken alkalmazott virtuális gépeken futtatott Linux disztribúciókon 
+tökéletesen használható /Vmware, WSL2/.
 
 ---
 
@@ -29,10 +28,10 @@ A cél: információt adni, hogy a felhasználó felelős döntést hozhasson a 
 ## 🛠️ Használat
 
 1. Töltsd le a `hw-vuln-check.sh` scriptet  
-2. Futtasd rootként vagy audit joggal: `sudo bash hw-vuln-check.sh`  
+2. Futtasd audit joggal: `sudo bash hw-vuln-check.sh`  
 3. A script létrehoz egy `values` nevű fájlt, amely soronként tartalmazza a CPU sebezhetőségek állapotát  
-4. Értékeld ki a fájlt — ne vakon, hanem szakértelemmel  
-5. Ne alkalmazz semmilyen kernel paramétert, amíg nem validáltad a saját környezetedet
+4. Értékeld ki a fájlt  
+5. Ne alkalmazz semmilyen kernel paramétert, amíg nem auditáltad a saját hardver környezetedet
 
 ⚠️ A script nem módosít semmit — kizárólag olvas, és diagnosztikai céllal futtatható.
 
@@ -50,16 +49,15 @@ Ez kizárólag szakértői döntés lehet — pl. `spectre_v2=on`, `nosmt`, `tsx
 
 
 🔍 Minden sor egy adott sebezhetőség állapotát jelzi.  
-A `Vulnerable` sorok különösen kritikusak — ha microcode hiányzik vagy SMT állapot ismeretlen, a rendszer potenciálisan támadható.
+A `Vulnerable` sorok kritikusak - enyhítés, korlátozás nélkül potenciálisan exploitálható, támadható.
+Más értékek tekintetében a kernel.org ezzel foglalkozó tájékoztatása a szakmai irányadó.
 
 ---
 
 ## 🔒 Felelősségi nyilatkozat
 
 A script futtatása kizárólag saját felelősségre történik.  
-A szerző nem vállal felelősséget semmilyen kárért, amely a script félreértett, felelőtlen vagy nem szakértői alkalmazásából ered.
-
-Ez nem termék, nem szolgáltatás, nem árucikk — hanem auditált technikai tanítás.
+A szerző nem vállal felelősséget semmilyen kárért, amely a script  nem szakértői alkalmazásából ered.
 
 ---
 
@@ -74,7 +72,7 @@ A megosztás célja: technikai immunizálás, nem üzleti haszon.
 
 ## 🛡️ Záró nyilatkozat
 
-Ha csak egyetlen gépet megment attól, hogy szemétteleppé váljon — már megérte.
+Ha csak egyetlen gépet megment attól, hogy szemétteleppé váljon — már megérte ezzel foglalkoznom.
 
 ---
 
