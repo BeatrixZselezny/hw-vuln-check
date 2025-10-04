@@ -88,5 +88,4 @@ A megosztás célja: technikai immunizálás, nem üzleti haszon.
 
 
 
-## 📄 Példa kimenet (`values` fájl)
 
